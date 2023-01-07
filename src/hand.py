@@ -34,6 +34,7 @@ class Hand:
         if self.total > 21:
             print("BUST")
             self.bust = True # If total over 21, bust.
+            self.out = True
         elif self.total == 21:
             print("WIN")
             self.out = True # If total equals 21, win.
